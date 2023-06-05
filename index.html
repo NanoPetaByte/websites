@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beary Best! Hostels</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+            * {
+                border: 0;
+                padding: 0;
+                margin: 0;
+                outline: none;
+                user-select: none;
+                font-family: 'Chelsea Market', cursive;
+            }
+            body {
+                color: #2e2e2e;
+            }
+            .navigation {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: #FFFFFF;
+            }
+            .navigation .logo, a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: #2e2e2e;
+            }
+            .navigation .logo {
+                padding-left: 0px;
+            }
+            .navigation .logo img {
+                width: 45px;
+                height: 45px;
+                margin-right: 10px;
+            }
+            .navigation .book {
+                padding: 10px 20px;
+                margin: 10px 20px;
+                margin-right: 0px;
+                border-radius: 20px;
+                background-color: #3E9BE9;
+                color: #FFFFFF;
+            }
+            .banner {
+                background-image: url("./background.webp");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 660px;
+            }
+            .heading {
+                margin: 25px;
+                font-size: 25px;
+                text-align: center;
+            }
+            .section {
+                margin: 10px;
+            }
+            .footer {
+                display: flex;
+                padding: 20px;
+                background-color: #2e2e2e;
+                color: #E9E9E9;
+            }
+            .socials {
+                position: fixed;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                display: block;
+                border-radius: 5px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                overflow: hidden;
+            }
+            .socials a {
+                width: 20px;
+                height: 30px;
+                color: #FFFFFF;
+                font-size: 20px;
+            }
+            #locations {
+                display: flex;
+                justify-content: center;
+            }
+            #locations .location {
+                display: block;
+                width: 312.5px;
+                background-color: rgba(0, 0, 0, 0);
+                text-align: left;
+                margin: 0px 7.5px;
+            }
+            #locations .location .image {
+                width: 100%;
+                height: 200px;
+                background-position: center;
+                background-size: cover;
+            }
+            #locations .location .info {
+                padding: 10px;
+            }
+            #locations .location .info .title {
+                font-size: 16px;
+            }
+            #locations .location .info .description {
+                margin: 2.5px 0px;
+                font-size: 13px;
+                color: #5e5e5e;
+                line-height: 18px;
+            }
+            #awards {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                height: 150px;
+            }
+            #awards img {
+                width: 175px;
+            }
+            @media screen and (max-width: calc((660px/660)*1600)) {
+                .banner {
+                    background-size: cover;
+                }
+                #locations .location .image {
+                    height: 275px;
+                }
+            } 
+            @media screen and (max-width: 650px) {
+                .banner {
+                    height: calc((635px/1600)*660);
+                }
+                .navigation a {
+                    display: none;
+                }
+                .heading {
+                    font-size: 20px;
+                    margin: 20px;
+                }
+                .socials {
+                    position: fixed;
+                    top: auto;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 22.5px;
+                    background-color: #FFFFFF;
+                    display: flex;
+                    border-radius: 5px;
+                    border-bottom-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    overflow: hidden;
+                }
+                .socials a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20px;
+                    height: 27.5px;
+                    color: #FFFFFF;
+                }
+                #locations {
+                    display: block;
+                    margin: 10px;
+                }
+                #locations .location {
+                    width: 100%;
+                    max-width: none;
+                    margin: 0px;
+                }
+                #locations .location .image {
+                    height: 225px;
+                }
+                #awards img {
+                    width: 150px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navigation">
+            <div class="logo">
+                <img src="logo.jpeg"> Beary Best! Hostels
+            </div>
+            <a href="#locations">Locations</a>
+            <a>Careers</a>
+            <a class="book" href="https://beary.cloudbeds.com/">Book Now!</a>
+        </div>
+        <div class="banner"></div>
+        <div class="section">
+            <div class="heading">Our Awards</div>
+            <div class="container" id="awards">
+                <img src="./award.webp">
+                <img src="./award2.png">
+            </div>
+        </div>
+        <div class="section">
+            <div class="heading">Locations</div>
+            <div class="container" id="locations">
+                <div class="location">
+                    <div class="image" style="background-image: url('./chinatown.jpg')"></div>
+                    <div class="info">
+                        <div class="title">Beary Best! Chinatown</div>
+                        <div class="description">
+                            Located in an old-fashioned building with a unique art design, 
+                            Beary Best! Chinatown is loaded with various facilities such as a comfortable lounge, 
+                            spacious dormitories and hallways, a small pantry and a small outdoor patio.
+                        </div>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="image" style="background-image: url('./kampong.png')"></div>
+                    <div class="info">
+                        <div class="title">Beary Best! Kampong Glam</div>
+                        <div class="description">
+                            Found in the vibrant creative centre of Singapore, 
+                            Beary Best! Kampong Glam is a unique capsule hostel located on Arab Street. 
+                            The hostel has a lovely rooftop that boasts an unblocked view.
+                        </div>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="image" style="background-image: url('./lavender.webp')"></div>
+                    <div class="info">
+                        <div class="title">Beary Best! Lavender</div>
+                        <div class="description">
+                            Opened in 2022, amidst the Covid-19 Pandemic, 
+                            Beary Best! Lavender is a three storey hostel situated in the culturally vibrant Jalan Besar Conservation Zone. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <div class="socials">
+            <a style="background-color: #3B5998" href="https://www.facebook.com/abearygoodhostel"><i class="fa fa-facebook"></i></a>
+            <a style="background-color: #55ACEE" href="https://twitter.com/bearygoodhostel"><i class="fa fa-twitter"></i></a>
+            <a style="background-color: #E1306C" href="https://www.instagram.com/bearybesthostel/"><i class="fa fa-hashtag"></i></a>
+        </div>
+    </body>
+</html>
